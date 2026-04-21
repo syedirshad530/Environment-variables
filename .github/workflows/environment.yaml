@@ -3,7 +3,7 @@ name: Example Workflow
 on: push
 
 env:
-  APP_NAME: my-app   # global env
+  APP_NAME: my-app1   # global env
 
 jobs:
   build:
