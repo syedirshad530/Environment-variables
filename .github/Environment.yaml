@@ -1,0 +1,18 @@
+name: Example Workflow
+
+on: push
+
+env:
+  APP_NAME: my-app   # global env
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production   # job-level env
+
+    steps:
+      - name: Print variables
+        run: |
+          echo "App: $APP_NAME"
+          echo "Env: $NODE_ENV"
